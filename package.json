@@ -5,11 +5,11 @@
   "type": "module",
   "homepage": "https://pikooh.github.io/test-with-will",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.13",
